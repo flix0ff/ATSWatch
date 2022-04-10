@@ -17,7 +17,7 @@
    <string notr="true">background-color: rgb(199, 199, 199);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLCDNumber" name="TimeNow">
+   <widget class="QLCDNumber" name="timeNow">
     <property name="geometry">
      <rect>
       <x>90</x>
@@ -62,7 +62,7 @@ background-color: rgb(255, 255, 0);</string>
      </size>
     </property>
    </widget>
-   <widget class="QLabel" name="DateNow">
+   <widget class="QLabel" name="dateNow">
     <property name="geometry">
      <rect>
       <x>90</x>
@@ -135,18 +135,37 @@ background-color: rgb(175, 175, 175);</string>
      </size>
     </property>
    </widget>
+   <widget class="QPushButton" name="buttonTimerPlus">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>510</y>
+      <width>381</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 5px;
+background-color: rgb(255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>plus.png</normaloff>plus.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>54</width>
+      <height>54</height>
+     </size>
+    </property>
+   </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>400</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

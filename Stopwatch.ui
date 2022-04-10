@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Timer</class>
- <widget class="QWidget" name="Timer">
+ <class>Stopwatch</class>
+ <widget class="QWidget" name="Stopwatch">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -30,7 +30,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius: 5px;
-background-color: rgb(255, 255, 0);</string>
+background-color: rgb(175, 175, 175);</string>
    </property>
    <property name="text">
     <string/>
@@ -46,7 +46,37 @@ background-color: rgb(255, 255, 0);</string>
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="buttonAlarm">
+  <widget class="QPushButton" name="buttonStopwatch">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>10</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 5px;
+background-color: rgb(255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>stopwatch.png</normaloff>stopwatch.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonAlarm_2">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -76,43 +106,13 @@ background-color: rgb(175, 175, 175);</string>
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="buttonStopwatch">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>10</y>
-     <width>51</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="whatsThis">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 5px;
-background-color: rgb(175, 175, 175);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>stopwatch.png</normaloff>stopwatch.png</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>32</width>
-     <height>32</height>
-    </size>
-   </property>
-  </widget>
   <widget class="QLCDNumber" name="MainTimer">
    <property name="geometry">
     <rect>
      <x>90</x>
-     <y>210</y>
+     <y>200</y>
      <width>211</width>
-     <height>101</height>
+     <height>111</height>
     </rect>
    </property>
    <property name="font">
@@ -121,71 +121,11 @@ background-color: rgb(175, 175, 175);</string>
     </font>
    </property>
   </widget>
-  <widget class="QPushButton" name="buttonTimerStart">
-   <property name="geometry">
-    <rect>
-     <x>90</x>
-     <y>360</y>
-     <width>51</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="whatsThis">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 5px;
-background-color: rgb(175, 175, 175);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>start1.png</normaloff>start1.png</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>32</width>
-     <height>32</height>
-    </size>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="buttonTimerPause">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>360</y>
-     <width>51</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="whatsThis">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 5px;
-background-color: rgb(175, 175, 175);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>pause.png</normaloff>pause.png</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>32</width>
-     <height>32</height>
-    </size>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="buttonTimerRefresh">
+  <widget class="QPushButton" name="buttonAlarmRefresh">
    <property name="geometry">
     <rect>
      <x>250</x>
-     <y>360</y>
+     <y>350</y>
      <width>51</width>
      <height>51</height>
     </rect>
@@ -211,13 +151,13 @@ background-color: rgb(175, 175, 175);</string>
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="buttonTimerPlus">
+  <widget class="QPushButton" name="buttonAlarmStart">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>510</y>
-     <width>381</width>
-     <height>81</height>
+     <x>90</x>
+     <y>350</y>
+     <width>51</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="whatsThis">
@@ -225,19 +165,49 @@ background-color: rgb(175, 175, 175);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius: 5px;
-background-color: rgb(255, 255, 0);</string>
+background-color: rgb(175, 175, 175);</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>plus.png</normaloff>plus.png</iconset>
+     <normaloff>start1.png</normaloff>start1.png</iconset>
    </property>
    <property name="iconSize">
     <size>
-     <width>54</width>
-     <height>54</height>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonAlarmPause">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>350</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 5px;
+background-color: rgb(175, 175, 175);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>pause.png</normaloff>pause.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
     </size>
    </property>
   </widget>
